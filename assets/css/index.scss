@@ -1,0 +1,299 @@
+@import "./includes/variables";
+
+.section {
+	margin-bottom: 80px;
+}
+
+.section.heroAbout{
+	margin-bottom: 60px;
+}
+
+aside {
+	position: absolute;
+	z-index: -1;
+	&.top {
+		top: 0;
+		right: 0;
+	}
+	&.center {
+		top: 1600px;
+		left: 0;
+	}
+	&.bottom {
+		bottom: -800px;
+		right: 0;
+	}
+}
+
+.iti {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.hero {
+	margin-bottom: 50px;
+	padding-top: 40px;
+	&__title {
+		font-size: 74px;
+		font-weight: 500;
+		
+	}
+}
+
+.tour {
+	.row {
+		row-gap: 30px;
+	}
+	&__title {
+		font-size: 1.4em;
+		font-weight: 500;
+		margin-bottom: 35px;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		transition: 400ms;
+
+		&:hover{
+			.card__img img {
+				transform: scale(1.1);
+				border-radius: 20px !important;
+			  }
+
+			.card__name{
+				color: #FB7100;
+			}  
+		}
+		&__img {
+			margin-bottom: 20px;
+			width: 100%;
+			border-radius: 20px !important;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 20px !important;
+				transition: 400ms;
+			}
+		}
+		&__name {
+			font-size: 0.9rem;
+			font-weight: 600;
+			margin-bottom: 20px;
+			transition: 400ms;
+			p {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+		&__info {
+			display: flex;
+			gap: 17px;
+			font-size: 0.7rem;
+			color: #7d8ba6;
+			margin-bottom: 15px;
+			.info-day {
+				display: flex;
+				align-items: center;
+				gap: 7px;
+				&::before {
+					content: "";
+					width: 9px;
+					height: 9px;
+					border-radius: 50%;
+					background: var(--ye);
+				}
+			}
+		}
+		&__price {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			.top {
+				font-size: 0.7rem;
+				font-weight: 400;
+				margin-bottom: 4px;
+			}
+			.price {
+				font-size: 0.9rem;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.heroAbout {
+	h2 {
+		font-size: 38px;
+		font-weight: 500;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 400;
+	}
+	&__wrapper {
+		margin-top: 60px;
+		max-width: 1920px;
+		margin: 0 auto;
+		.swiper-slide {
+			width: 440px;
+			height: 378px;
+			border-radius: 20px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.img {
+    border-radius: 20px;
+}
+
+
+
+@media (max-width: 1300px) {
+	.hero__title{
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.hero {
+		margin-bottom: 50px;
+		padding-top: 30px;
+		&__title {
+			font-size: 2.25rem;
+		}
+	}
+
+	.heroAbout__wrapper .swiper-slide {
+        width: 330px;
+        height: 300px;
+    }
+
+	.section.heroAbout{
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 721px){
+	.section {
+        margin-bottom: 50px;
+    }
+
+	.heroAbout h2 {
+        font-size: 38px;
+    }
+
+    .heroAbout p {
+        font-size: 18px;
+    }
+
+	.heroAbout__wrapper .swiper-slide {
+        width: 223px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 620px) {
+	.job__info_title{
+		font-size: 30px !important;
+	}
+
+	.section.heroAbout{
+		margin-bottom: 30px;
+	}
+
+	.chooseUs__title{
+		font-size: 30px;
+	}
+}
+
+
+@media (max-width: 575.98px) {
+	.hero {
+		margin-bottom: 20px;
+		padding-top: 20px;
+		&__title {
+			font-size: 1.35rem;
+		}
+	}
+	.tour {
+		.row {
+			row-gap: 25px;
+		}
+		&__title {
+			font-size: 0.8em;
+			margin-bottom: 20px;
+		}
+		.card {
+			&__img {
+				margin-bottom: 15px;
+			}
+			&__name {
+				font-size: 0.7rem;
+				margin-bottom: 10px;
+			}
+			&__info {
+				font: 0.55rem;
+				margin-bottom: 10px;
+			}
+			&__price {
+				.top {
+					font-size: 0.55rem;
+				}
+				.price {
+					font-size: 0.7rem;
+				}
+			}
+		}
+	}
+
+	.tour .card__img {
+		height: 260px;
+	}
+}
+
+@media (max-width: 450px){
+	.section {
+        margin-bottom: 35px;
+    }
+
+	.section.application{
+		margin-bottom: 30px;
+	}
+	
+	.job__info_title{
+		font-size: 24px !important;
+	}
+
+	.heroAbout p{
+		font-size: 14px;
+	}
+
+	.job {
+		margin-bottom: 30px;
+	}
+
+	.chooseUs__title{
+		font-size: 24px;
+	}
+
+	.tour .card__img {
+		height: 220px;
+	}
+	
+}
+
+@media (max-width: 360px) {
+	.tour .card__img {
+		height: 190px;
+	}
+}
+
+

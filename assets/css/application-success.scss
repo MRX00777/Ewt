@@ -1,0 +1,132 @@
+body{
+    background: var(--dark-blue, #091C43);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.application__success{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.success{
+    border-radius: 20px;
+    opacity: 0.81;
+    background: #12254E;
+    box-shadow: 0px 30px 40px 0px rgba(37, 45, 53, 0.22);
+
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 30px;
+
+    &-img{
+        width: 168px;
+        height: 168px;
+        margin-bottom: 0;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h3{
+        color: #FA6F00;
+        text-align: center;
+        font-family: Rawline;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: normal;
+        max-width: 461px;
+        margin-bottom: 15px;
+        margin-top: 17px;
+        list-style: none !important;
+        text-decoration: none !important;
+        font-style: none !important;
+    }
+
+    p{
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: Rawline;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        max-width: 461px;
+    }
+}
+
+.iti {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+
+@media (max-width: 800px) {
+    .success-img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 620px) {
+    .success-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h3{
+        font-size: 35px !important;
+        margin-bottom: 8px;
+    }
+
+    .success{
+        margin: 20px;   
+        padding: 30px 20px;
+    }
+
+    .success p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .success {
+        margin: 0px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .success-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h3{
+        font-size: 25px !important;
+        margin-bottom: 6px;
+    }
+
+    .success{
+        // margin: 15px;   
+        padding: 20px 15px;
+    }
+
+    .success p {
+        font-size: 14px;
+    }
+}

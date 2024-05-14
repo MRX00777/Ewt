@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Rawline';
+	src: url("/assets/fonts/rawline-900.ttf") format('truetype');
+    font-weight: 900;
+}
+@font-face {
+	font-family: 'Rawline';
+	src: url("/assets/fonts/rawline-400.ttf") format('truetype');
+    font-weight: 400;
+}
+@font-face {
+	font-family: 'Rawline';
+	src: url("/assets/fonts/rawline-500.ttf") format('truetype');
+    font-weight: 500;
+}
+@font-face {
+	font-family: 'Rawline';
+	src: url("/assets/fonts/rawline-600.ttf") format('truetype');
+    font-weight: 600;
+}
+@font-face {
+	font-family: 'Rawline';
+	src: url("/assets/fonts/rawline-700.ttf") format('truetype');
+    font-weight: 700;
+}
+
+
+
